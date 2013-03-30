@@ -1,0 +1,431 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+<title>Mobiforge</title>
+<meta name="keywords" content="" />
+		<link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+	
+<style type="text/css">
+
+{ /* reset */
+vertical-align: baseline;
+font-family: inherit;
+font-style: inherit;
+font-size: 100%;
+border: none;
+padding: 0;
+margin: 0;
+}
+
+body {
+	background: #697765;
+	margin: 50px;
+	padding: 0;
+	box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.1);
+	line-height: 1.25em;
+	font-weight: lighter;
+	font-variant: normal;
+	text-transform: none;
+	color: #2B2B2D;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 75%;
+}
+
+br.clearfix {
+	clear: both;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0px;
+	padding-right: 20px;
+	padding-left: 20px;
+	color: #2B2B2D;
+	font-family: Abel, sans-serif;
+}
+h2 {
+	font-size: 1.75em;
+	text-shadow: 1px 1px 0px rgba(0,0,0,0.3);
+}
+
+h2,h3,h4 {
+	margin-bottom: 1em;
+	font-family: Abel, sans-serif;
+}
+
+h3 {
+	font-size: 1.25em;
+}
+
+h4 {
+	font-size: 1.0em;
+}
+
+a img { 
+	border: none;
+}
+
+a:link {
+	color:#2B2B2D;
+	text-decoration: none;
+	text-decoration: none;
+}
+a:hover, a:active, a:focus {
+	text-decoration: none;
+}
+
+.container {
+	width: 100%;
+	height: 5%;
+	max-width: 1260px;
+	background: #A4ADA1;
+	spacing: 5px;
+	margin: 0 auto;
+}
+.menu {
+	width: 60%;
+	max-width: 1260px;
+	background: #A4ADA1;
+	height: 5%;
+	margin: 0 auto;
+}
+
+#submenu {
+	width: 110px;
+	background: #6D6D77;;
+	margin: 0 auto;
+}
+
+.header {
+	max-width: 960px;
+	float: left;
+	background: #697765;
+	height: 100px;
+}
+
+.header2 {
+	max-width: 960px;
+	float: left;
+	background: #697765;
+	height: 75px;
+	position: relative;
+	clear: both;
+	width: 960px;
+}
+.page {
+	margin: 25px 0 0 0;
+	margin-bottom: 25px;
+	margin-top: 3px; 
+	margin-right: 50px; 
+	display: block;
+	position: absolute; 
+	width: relative;
+	height: relative;
+	background: #A4ADA1;
+	}
+
+.content1 {
+	padding: 10px 0;
+	margin-left: 25px;
+	width: 60%;
+	height: 20%;
+	background: #FFFFFF;
+	float: left;
+	padding: 25px;
+	width: 50%;
+	height: 40%;
+	float: left; 
+	display:block;
+}
+.content2 {
+	padding: 10px 0;
+	margin-left: 20px;
+	width: 300px;
+	height: 200px;
+	background: #E2D0C7;
+	position: inherited;
+	float: right;
+	display: block;
+}
+.content3 {
+	padding: 10px 0;
+	margin-top: 25px;   
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 25px;
+	width: 39%;
+	height: 35%;
+	background: #50505E;
+	position: relative;
+	float: left;
+	display: block;
+}
+
+.content4 {
+	padding: 10px 0;
+	margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+	width: 60%;
+	height: 40%;
+	background: #FFFFFF;
+	position: relative;
+	float: right;
+	display: block;
+}
+
+.content5,.content6 {
+	padding: 5px 0;
+	margin-left: 25px;
+	background: #E2D0C7;
+	position: inherited;
+	float: left;
+	display: block;
+
+.content ul, .content ol { 
+	padding: 0 20px 20px 20px;
+}
+
+p {
+	margin-bottom: 1.25em;
+	margin-left: 20px;
+}
+
+ul {
+	margin-bottom: 1.5em;
+}
+
+ul h4 {
+	margin-bottom: 0.35em;
+}
+
+.content ul, .content ol { 
+	padding: 0 20px 20px 40px;
+}
+ul.nav {
+	list-style: none;
+	border-top: 1px solid #000;
+	margin-bottom: 15px;
+}
+ul.nav li {
+	border-bottom: 1px solid #666;
+}
+ul.nav a, ul.nav a:visited { 
+
+	display: block;
+	text-decoration: none;
+	background: #50505E;
+	color: #6D6D77;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { 
+	background: #50505E;
+	cursor: pointer;
+}
+
+a:focus {
+	cursor: hand;
+	color: #28282D;
+}
+.footer {
+	padding: 10px 0;
+	max-width: 960px;
+	float: left;
+	background: #697765;
+	height: 100px;
+	position: relative;
+	clear: both;
+}
+
+.fltrt { 
+	float: right;
+	margin-left: 0px;
+}
+.fltlft { 
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { 
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+body,td,th {
+	color: #28282D;
+}
+</style></head>
+
+<body >
+<div id="header"></div>
+<div class="container" style="width: 100%;
+	height: 5%;
+	max-width: 1260px;
+	background: #A4ADA1;
+	margin: 0 auto;">    
+  <p><a href="mobiforge.html"><img src="images/mobiForge2c.png" width="193" height="70" alt="logo" style="cursor:pointer"></a></p>
+  <p class="menu"> 
+  <div align="right" style="margin-right: 25px; position: inherited;">
+    <table style="cursor:pointer" width="490px" heigth="100px" bgcolor="#808084" border="5px"  bordercolor="#5B5B68" cellspacing="0" cellpadding="5px">
+      <tr>
+        <th onMouseOver="this.bgColor='#FF7A0D'" onMouseOut="this.bgColor='#808084'" bgColor='#808084'" width="85" height="75" scope="col"><a href="mobiforge_antenna.html">antenna</a></th>
+        <th onMouseOver="this.bgColor='#FF7A0D'" onMouseOut="this.bgColor='#808084'" bgColor='#808084'" width="85" height="75" scope="col">blog</th>
+        <th onMouseOver="this.bgColor='#FF7A0D'" onMouseOut="this.bgColor='#808084'" bgColor='#808084'" width="85" height="75" scope="col">forum</th>
+        <th onMouseOver="this.bgColor='#FF7A0D'" onMouseOut="this.bgColor='#808084'" bgColor='#808084'" width="85" height="75" scope="col">directory</th>
+        <th onMouseOver="this.bgColor='#FF7A0D'" onMouseOut="this.bgColor='#808084'" bgColor='#808084'"width="85" height="75" scope="col">resources</th>
+      </tr>
+    </table>
+    </p>
+  </div>
+  <div id="page" style="background: #A4ADA1; margin-top: 3px; position: absolute; margin-right: 50px; display: block;">
+    <div class="content1" style="padding: 25px;
+	margin-left: 25px;
+    margin-right: 25px;
+	width: 50%;
+	height: 20%;
+	background: #FFFFFF;
+	float: left; display:block;">
+        <h2>welcome</h2>
+        <h3>feature&nbsp;|&nbsp; HTML for mobile developers</h3>
+        <p><img src="images/phone.png" width="100" height="150" alt="phone" style="float: left" margin-bottom: "10px"></p>
+        <p>Duo ut nihil lucilius deterruisset, ut eius bonorum efficiendi eum. Ius quodsi lucilius lobortis eu. Sea eu summo graece, duo et malis tincidunt eloquentiam, quodsi constituto sententiae has ea. Et mollis facilis sed, vix an nonumy disputando. Vix deleniti gubergren et. Ei vis summo viris.</p>
+        <p>Sed unum meis mucius ne. Tale possim adolescens ea vis, meliore dignissim mei in. Mea ei dicit feugait definiebas, eros eius legimus te sit. Oratio nonumes eam ei. Scaevola lucilius et cum, ut omnes oratio cum, his cu euismod nusquam similique. Et vel dolorum offendit postulant.</p>
+        <p>Te nostrud intellegebat nam, ad saperet ancillae tractatos usu. Vim affert numquam et. Eam ut clita fabulas, pri in bonorum ancillae consequat. Duo congue verterem an, fabulas voluptatibus ad duo. Nisl fastidii comprehensam id sea. Ei pri epicuri oporteat postulant, autem commune id quo. Ei tota singulis suscipiantur est, legimus dissentias qui id. An mea facilisi menandri, ius ad choro labitur salutatus. At his modus oratio, vix no possim constituam. Ne minim congue recteque his, agam referrentur mei cu. Nihil vulputate usu in. Ex sea erant detraxit, quod ipsum habemus cum id. Phaedrum rationibus ne his. Et virtute nominavi sit, no sed quaeque expetendis, ne usu solum viderer disputando. Mel eu justo erroribus. Cu alterum civibus urbanitas sea. Vis iisque signiferumque ad. Dicam vocent nam ut. Ex sea laboramus rationibus conclusionemque, vel at sumo dicit. Nihil tamquam nusquam eu eos, at autem porro expetendis per.
+</p>
+</div>
+    <div class="content2" style="padding: 25px 0;
+	margin-left: 25px;
+    margin-right: 25px;
+	width: 300px;
+	height: 100px;
+	background: #E2D0C7;
+	position: inherited;
+	float: left; display: block">
+        <h4>advertizing space</h4>
+        <p></p>
+    </div>
+      <p class="submenu">
+<table style="cursor:pointer" width="110" border="0" cellspacing="10" cellpadding="5">
+          <tr>
+            <th scope="col" style="color: #222222;" onMouseOver="this.bgColor='#FF7A0D'" onMouseOut="this.bgColor='#6D6D77'" bgColor='#6D6D77'"><div align="center">signin</div></td>
+        </tr>
+          <tr>
+            <td style="color: #222222;" onMouseOver="this.bgColor='#FF7A0D'" onMouseOut="this.bgColor='#6D6D77'" bgColor='#6D6D77'"><div align="center">contribute</div></td>
+        </tr>
+          <tr>
+            <td style="color: #222222;" onMouseOver="this.bgColor='#FF7A0D'" onMouseOut="this.bgColor='#6D6D77'" bgColor='#6D6D77'"><div align="center">advertise</div></td>
+      	</tr>
+          <td style="color: #222222;" onMouseOver="this.bgColor='#FF7A0D'" onMouseOut="this.bgColor='#6D6D77'" bgColor='#6D6D77'"><div align="center">contact</div></td>
+      	</tr>
+    </table>
+    </p>
+    
+    <table width="210" border="0" cellspacing="0" cellpadding="0" style="position: relative; margin-left: 25px; margin-top: 20px;">
+      <tr>
+        <th style="cursor:pointer" scope="col"><a href="feed://ww.mobiforge.com/crss/node/1138" title="rss feed"><img src="images/rss.png" width="40" height="40" alt="rss" ></a></th>
+        <th style="cursor:pointer" scope="col"><a href="https://twitter.com/mobiforge" title="twitter"><img src="images/twit.png" width="40" height="40" alt="twitter" style="float: left;"></a></th>
+        <th style="cursor:pointer" scope="col"><a href="http://www.linkedin.com/" title="linkedin"><img src="images/in.png" width="40" height="40" alt="in" style="float: left;"></a></th>
+        <th style="cursor:pointer" scope="col"><a href="http://www.google.com/" title="google"><img src="images/google.png" width="40" height="40" alt="google" style="float: left;"></a></th>
+        <th style="cursor:pointer" scope="col"><a href="http://www.facebook.com/pages/Mobiforgein/125841017541989" title="mobiforge.in facebook"><img src="images/face.png" width="40" height="40" alt="facebook" style="float: left;"></a></th>
+      </tr>
+    </table>
+    <div class="content3" style="padding: 15px 0;
+    margin-top: 25px;   
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 25px;
+	width: 39%;
+	height: 35%;
+	background: #50505E;
+    color: #FFFFFF;
+	position: relative;
+	float: left;
+	display: block;">
+    <h3 style="color: white;">tags in technology</h3><br>
+    <p style="color: white;  margin-left: 20px;">AJAX&nbsp; &nbsp; APIs&nbsp; &nbsp; C#&nbsp; &nbsp; CSS&nbsp; &nbsp; Database&nbsp; &nbsp; Flash&nbsp; &nbsp; Lite&nbsp; &nbsp; HTML&nbsp; &nbsp; HTML5&nbsp; &nbsp; HTTP&nbsp; &nbsp;</p>
+     <p style="color: white; margin-left: 20px;">Java&nbsp; &nbsp; PHP&nbsp; &nbsp; Python&nbsp; &nbsp; SMS&nbsp; &nbsp; SVG&nbsp; &nbsp; XHTML&nbsp; &nbsp; XML</p>
+</p><p style="color: white;">&nbsp;MORE &gt;</p> 
+    </div>
+    <div class="content4" style="padding: 15px 0;
+	margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 25px;
+	width: 60%;
+	height: 20%;
+	background: #FFFFFF;
+	position: relative;
+	float: right;
+	display: block;">
+      <p>Sumo autem ridens cu duo, periculis explicari his ei. Nec ei etiam corrumpit consequuntur. Omnis consulatu sententiae pro id. Ut duo ridens vivendum, quot homero ocurreret te pro. Cu iudico inimicus urbanitas vim, meliore lucilius phaedrum duo ea. At pri justo augue laudem, nec sonet dissentiunt efficiantur ut. Cu amet labitur vix, no vim veri oratio. Cum ut dolore quaestio reprimique. Eu cum comprehensam mediocritatem. His ei modo instructior, quo ea hinc labitur, eligendi placerat deserunt nam no. </p>
+      <p>Id eros debet disputationi ius. Animal latine deseruisse cum an. Ea pro dictas nonumes, disputando suscipiantur ad mel, id sonet iisque copiosae mea. Deserunt imperdiet usu et, illum ridens ad est. Ferri ubique no pro, sit ne moderatius argumentum. Ei viris maluisset forensibus sit, eos in vivendum inimicus, vim brute integre noluisse eu. Cu decore convenire dignissim mel. Nec movet voluptaria adipiscing at, posidonium cotidieque at sed. Iudicabit persequeris ea has. Ut has invidunt expetendis, an vix utamur eleifend vulputate, vel primis denique ut. Ius vero tritani persequeris at, atqui incorrupte et ius, mel debet nullam postulant cu. Qui ne possim praesent. Brute causae appetere in qui, ex eum commodo repudiandae. Cu veri percipit luptatum mea. Ei magna regione feugait mel. Ex eam minimum prodesset, dicta mucius probatus ne mea. Ne habeo debet perpetua sea, ea quo diam prompta.</p>
+      <p>Dicant nonumy pertinacia est in. Minim patrioque euripidis qui eu. Platonem recteque ea has, cu meis legere interesset nam. Pro iusto epicuri et, vis vidit constituam temporibus ad, cum malis voluptatum ei. Labores neglegentur est no.</p>
+      <p>Idque mollis sadipscing in vix. Aliquip iuvaret pertinacia usu ex, tota erroribus nec at. Te mei aliquam dolorum perpetua, at labitur eleifend consequat eos, has solet conceptam at. Sumo graeci his ad, ius enim sententiae assueverit ei. An nam probatus theophrastus, at duis tractatos prodesset mel, qui ut aeque quando doming.</p>
+    </div>
+<div class="content5" style="padding: 15px 0;
+	margin-top: 40px;
+    margin-left: 25px;
+	width: 34%;
+	height: 20%;
+	background: #E2D0C7;
+	position: inherited;
+	float: left;
+	display: block;">
+    <h3>tips | Use Google Analytics for mobile tracking</h3><br>
+  <p>Google Analytics can track traffic to your mobile website from all web-enabled devices, whether or not the device runs JavaScript. This is made possible by adding a server side code snippet to your mobile website. To install the code snippet, select "Advanced" from the "Add new profile" setup wizard within Google Analytics, and select the radio button, "A site built for a mobile phone".</p>
+    <p> PHP, Perl, JSP and ASPX sites all supported. Simply copy the code displayed into every page you want tracked and you will have harnessed the awesome power of Google Analytics to track your mobile visits!</p>
+  </div>
+    <div class="content6" style="padding: 15px 0;
+	margin-top: 25px;
+    margin-left: 25px;
+	width: 34%;
+	height: 20%;
+	background: #E2D0C7;
+	position: inherited;
+	float: left;
+	display: block;">
+    <h3>scoops | MobiForge news</h3>
+    <ul>
+    <h4>HTML5</h4>
+      <li><p>Hookinto native notifications from the...</p></li>
+      <li><p>Facebook Mobile Web Apps have arrived.</p></li>
+      <h4>ANDROID</h4>
+      <li><p>Android meet App Engine, App Engine meet.</p></li>
+    </ul>
+    <p>MORE &gt;</p>
+    </div>
+    <p style="cursor:pointer"><img src="images/iphone.png" alt="ios" width="40" height="40" style="float: right; position: inherited; margin-left: 25px; margin-top: 100px; margin-right: 25px;"><a href="https://developer.apple.com/technologies/ios/" title="apple developers"></a></p>
+    <p style="cursor:pointer"><img src="images/dac_logo.png" width="100" height="40" alt="android" style="float: right; position: inherited; margin-top: 100px; margin-right: 40px;><a href="http://developer.android.com/index.html" title="android developers"><a href="http://developer.android.com/index.html"></a></p>
+    <div class="footer" id="footer">
+    <p class="submenu">
+    <table width="455" border="0" cellspacing="10" cellpadding="5" style="cursor:pointer; float: right; position: relative; margin-top: 200px;">
+      <tr>
+        <th scope="col" style="color: #222222; width: 110px;" onMouseOver="this.bgColor='#FF7A0D'" onMouseOut="this.bgColor='#6D6D77'" bgColor='#6D6D77'"><div align="center">signin</div></th>
+        <th scope="col" style="color: #222222; width: 110px;" onMouseOver="this.bgColor='#FF7A0D'" onMouseOut="this.bgColor='#6D6D77'" bgColor='#6D6D77'"><div align="center">contribute</div></th>
+        <th scope="col" style="color: #222222; width: 110px;" onMouseOver="this.bgColor='#FF7A0D'" onMouseOut="this.bgColor='#6D6D77'" bgColor='#6D6D77'"><div align="center">advertise</div></th>
+        <th scope="col" style="color: #222222; width: 110px;" onMouseOver="this.bgColor='#FF7A0D'" onMouseOut="this.bgColor='#6D6D77'" bgColor='#6D6D77'"><div align="center">contact</div></th>
+      </tr>
+    </table>
+    </p>
+</div>
+</body>
+</html>
